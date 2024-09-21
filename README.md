@@ -16,3 +16,13 @@
 - Better Error Handling.
 - It allows us to host app via https
 - Tree Shaking - remove unused code
+
+
+Two types of exports/imports:
+1) Default export/import
+export default Component/variable
+import Component from "path";
+
+2) Named export/import
+export const Component
+import {Component} from "path";
