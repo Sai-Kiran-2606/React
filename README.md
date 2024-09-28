@@ -18,7 +18,7 @@
 - Tree Shaking - remove unused code
 
 
-Two types of exports/imports:
+# Two types of exports/imports:
 1) Default export/import
 export default Component/variable
 import Component from "path";
@@ -26,3 +26,7 @@ import Component from "path";
 2) Named export/import
 export const Component
 import {Component} from "path";
+
+# 2 types of routing in web apps:
+1) Client side routing
+2) Server side routing
