@@ -31,6 +31,8 @@
     background-color: #f0f0f0;
     padding: 5px;
     margin: 2px;
+    color:black;
+    text-decoration: underline;
 }
 
 .restro-card:hover {
@@ -82,6 +84,11 @@
 .login-logout{
     padding: 0 10px;
     cursor: pointer;
+}
+
+.user-card{
+    padding: 1px;
+    border: 1px solid black;
 }
 
 

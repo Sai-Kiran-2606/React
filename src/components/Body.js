@@ -27,10 +27,10 @@ const Body = () => {
             <div className="body-filter">
                 <div className="search">
                     <input type="text" className="search-box"  onChange={(e) => {
-                        //Filter the restaurants and update the UI
                         setSearchText(e.target.value);
                     }} value={searchText}></input>
                     <button className="search-btn" 
+                        //Filter the restaurants and update the UI
                         onClick={() => {
                             const filteredRestaurants = listOfRestaurants.filter((res) => res.card.card.info.name.toLowerCase().includes(searchText.toLowerCase()));
                             setFilteredRestaurants(filteredRestaurants);
@@ -42,6 +42,7 @@ const Body = () => {
                         setFilteredRestaurants(filteredList);
                     }}>Top Rated Restaurants</button>
             </div>
+
             <div className="restro-container">
                 {
                     filteredRestaurants.map((restaurant) => (
