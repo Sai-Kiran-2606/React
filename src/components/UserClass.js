@@ -3,33 +3,32 @@ import React from "react";
 class UserClass extends React.Component {
     constructor(props){
         super(props);
-        
         this.state = {
-            count: 0
+            userInfo: {
+            },
         };
-        console.log("Child Constructor");
+        // console.log("Child Constructor");
     }
 
-    componentDidMount() {
-        console.log("Child Component Did Mount");
+    async componentDidMount() {
+        // console.log("Child Component Did Mount");
+        const data = await fetch("https://api.github.com/users/Sai-Kiran-2606");
+        const json = await data.json();
+
+        this.setState({
+            userInfo: json,
+        });
     }
 
     render(){
-        console.log("Child Render");
+        // console.log("Child Render");
 
-        const {name, location} = this.props;
-        const {count} = this.state;
+        const {id, login} = this.state.userInfo;
 
         return (
             <div className="user-card">
-                <h1>Count: {count}</h1>
-                <button onClick={() => {
-                    this.setState({
-                        count: count+1,
-                    });
-                }}>Increment Count</button>
-                <h2>Name: {name}</h2>
-                <h3>Location: {location}</h3>
+                <h2>ID: {id}</h2>
+                <h3>Login: {login}</h3>
                 <h4>Contact: saikiranreddykotha260@gmail.com</h4>
             </div>
         );
