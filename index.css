@@ -1,4 +1,9 @@
-.header {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .header {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
@@ -48,7 +53,7 @@
 .body-filter{
     display: flex;
     /* justify-content: space-between; */
-}
+/* }
 
 .search{
     margin: 0px;
@@ -89,7 +94,7 @@
 .user-card{
     padding: 1px;
     border: 1px solid black;
-}
+} */
 
 
 
@@ -126,4 +131,4 @@
     display: inline;
     position: relative;
     left: 82%;
-} */
+} */ 
