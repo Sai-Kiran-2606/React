@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
-const RestaurantCard = (props) => {
+export const RestaurantCard = (props) => {
     // console.log(props.resData.card.card.info.name);
     const {name, cuisines, avgRating, cloudinaryImageId} = props?.resData?.card?.card?.info;
     
@@ -15,4 +15,13 @@ const RestaurantCard = (props) => {
     );
 };
 
-export default RestaurantCard;
+export const WithPromotedlabel = (RestaurantCard) => {
+    return (props) => {
+        return(
+            <div>
+                <label className="absolute left-4 bg-green-100 text-black font-bold px-2 rounded-lg">Promoted</label>
+                <RestaurantCard {...props} />
+            </div>
+        );
+    };
+};
