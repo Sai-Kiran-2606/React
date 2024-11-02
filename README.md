@@ -38,3 +38,21 @@ import {Component} from "path";
 4) Create slice (cartSlice)
 5) dispatch (action)
 6) Selector
+
+# Types of testing (Developer Edition)
+1) Manual Testing
+2) Test by code
+    i) Unit Testing.
+    ii) Integration Testing.
+    iii) End to End Testing (e2e test).
+
+# Setting Up Testing in our application.
+1) Installed React Testing Library
+2) Installed Jest
+3) Installed Babel-Jest dependencies
+4) Configure babel according to testing
+5) Configure parcel config file to disable babel traspilation
+6) Jest configuration - npx jest --init
+7) Install jsdom library
+8) Install @babel/preset-react - to make JSX work in test cases.
+9) Install @testing-library/jest-dom 
