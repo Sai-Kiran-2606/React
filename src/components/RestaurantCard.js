@@ -3,6 +3,8 @@ import { CDN_URL } from "../utils/constants";
 export const RestaurantCard = (props) => {
     // console.log(props.resData.card.card.info.name);
     const {name, cuisines, avgRating, cloudinaryImageId} = props?.resData?.card?.card?.info;
+
+    console.log(props.resData);
     
     return(
         <div className="restro-card m-4 p-4 w-[250px] h-[410px] bg-gray-200 rounded-lg hover:border border-solid border-black hover:bg-gray-100">
